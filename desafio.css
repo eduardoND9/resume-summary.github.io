@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+}
+
+.principal{
+    width: 650px;
+    height: 470px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Hanken Grotesk;
+    border-radius: 30px;
+    
+    box-sizing: border-box;
+    
+
+}
+.principal > div{
+    width: 50%;
+}
+.pdg{
+    padding: 0px 40px;
+}
+
+/*-------------cuadro morado----------------------*/
+.morado{
+    background: linear-gradient(rgb(103,67,255), rgb(50,43,232));
+    border-radius: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+.titulo{
+    padding: 13px;
+    margin-top:0px ;
+}
+.letra_oscuro{
+    color: #cfc9ff;
+}
+.circulo{
+    box-sizing: border-box;
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    background: linear-gradient(rgb(50,43,232), rgb(103,67,255));
+    margin:auto;
+    padding-top:30px;
+}
+.numero:hover{
+    font-size: 90px;
+    
+}
+.numero{
+    font-size: 80px;
+    transition: 0.3s;
+}
+.centrar_txt{
+    text-align: center;
+}
+/*-----------Resumen----------------------*/
+.resumen{
+    box-sizing: border-box;
+    box-shadow:5px 5px 20px #f6f8fd;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.resumen>div{
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 50px;
+    padding: 4px 5px;
+    margin-bottom: 12px; 
+}
+
+.reaction{
+    background: #fff6f5;
+    color: #ff5555;
+
+}
+.memory{
+    background: #fffbf2;
+    color: #ffc24b;
+}
+.verbal{
+    background: #f2fbfa;
+    color: #00bb8f;
+}
+.visual{
+    background: #f3f3fd;
+    color: #1f32d8;
+}
+.padre{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.fila{
+    display: flex;
+    align-items: center;
+}
+.padre:hover{
+    background: #cecdcd53;
+    transition: ease-out 0.5s;
+}
+.padre img{
+    margin-left: 9px;
+    margin-right: 9px;
+}
+.result{
+    position: absolute;
+    top: 14px;   
+    right: 10px;
+}
+.fila span{
+    color: #9c9b9a;
+}
+span:first-child{
+    color: #24253c;
+}
+/*-------------estilando boton-------*/
+.btn{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    background: #303b59;
+    color: white;
+    margin-top: 35px;
+    font-family: Hanken Grotesk;
+    border: none;
+}
+.btn:hover{
+    background: #0d128e;
+}
+/*----------MEDIA QUERY----------*/
+
+@media (max-width: 375px){
+    .principal{
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: unset;
+        /* background: #00bb8f ; */
+           
+    }
+    .principal > div{
+        width: 100%;
+        
+        
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+
+
